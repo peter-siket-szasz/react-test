@@ -1,12 +1,10 @@
 # User Directory
 
-React + Vite frontend interview starter. Source lives in [`user-directory/`](./user-directory/) — run dev/build from the **repository root**.
-
-See [user-directory/README.md](./user-directory/README.md) for requirements and project structure.
-
-## Getting started
+Capgemini frontend interview starter (React + Vite).
 
 ```bash
 npm install
 npm run dev
 ```
+
+**What to build:** fetch users from JSONPlaceholder, search by name/email, show them in a styled card grid with loading and error states. Details → [user-directory/README.md](./user-directory/README.md)
