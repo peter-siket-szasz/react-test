@@ -1,6 +1,6 @@
 # User Directory
 
-A React + Vite frontend interview starter.
+A React + Vite frontend interview starter. The repo ships with file scaffolding and TODOs — **implement the requirements below** during the interview.
 
 ## Getting started
 

@@ -1,7 +1,4 @@
 export default function ErrorMessage({ message }) {
-  return (
-    <p className="error-message" role="alert">
-      {message}
-    </p>
-  )
+  // TODO: display message in red
+  return null
 }
