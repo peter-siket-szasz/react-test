@@ -11,6 +11,8 @@ npm install
 npm run dev
 ```
 
+
+**HMR tip:** Edit `user-directory/src/` only. Run dev from the repo root. If changes do not auto-reload (WSL/Docker/synced folders), restart `yarn dev` after pulling — polling is on in `vite.config.ts`.
 ## Your task
 
 Build a small app that loads users from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) and lets you search them.
@@ -31,6 +33,8 @@ Optional if time allows: sorting, expandable cards.
 
 ```
 user-directory/src/
+
+**HMR tip:** Edit `user-directory/src/` only. Run dev from the repo root. If changes do not auto-reload (WSL/Docker/synced folders), restart `yarn dev` after pulling — polling is on in `vite.config.ts`.
   components/   SearchBar, UserCard, UserList, LoadingSpinner, ErrorMessage
   hooks/        useUsers.js
   App.jsx       App.css
