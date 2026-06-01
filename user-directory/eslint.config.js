@@ -17,5 +17,9 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // Stubs intentionally leave variables unused until the candidate implements them
+      'no-unused-vars': 'off',
+    },
   },
 ])
