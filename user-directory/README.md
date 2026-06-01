@@ -1,29 +1,26 @@
 # User Directory
 
-A React + Vite frontend interview starter. The repo ships with file scaffolding and TODOs — **implement the requirements below** during the interview. The repo ships with file scaffolding and TODOs — **implement the requirements below** during the interview.
+A React + Vite frontend interview starter. The repo ships with file scaffolding and TODOs — **implement the requirements below** during the interview.
 
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
+Run `npm install` and `npm run dev` from the **repository root** (Vite is configured to load this folder).
 
 ## Project structure
 
 ```
-src/
-  components/
-    UserCard.jsx
-    UserList.jsx
-    SearchBar.jsx
-    LoadingSpinner.jsx
-    ErrorMessage.jsx
-  hooks/
-    useUsers.js
-  App.jsx
-  App.css
-  main.jsx
+user-directory/
+  src/
+    components/
+      UserCard.jsx
+      UserList.jsx
+      SearchBar.jsx
+      LoadingSpinner.jsx
+      ErrorMessage.jsx
+    hooks/
+      useUsers.js
+    App.jsx
+    App.css
+    main.jsx
+  public/
 ```
 
 ## Requirements
