@@ -8,8 +8,34 @@ export function useUsers() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    // TODO: fetch from USERS_URL and update users, loading, error
-  }, [])
 
+    // setLoading(true)
+    // fetch(USERS_URL)
+    //   .then(res => res.json())
+    //   .then(data => setUsers(data))
+    //   .catch(e => setError(e))
+    //   .finally(setLoading(false))
+
+    const loadUsers = async () => {
+      setLoading(true)
+      try {
+        const res = await fetch(USERS_URL);
+
+        if (!res.ok) {
+          throw new Error('Error happened')
+        }
+
+        const data = await res.json()
+        setUsers(data)
+        setError(null)
+      } catch (e) {
+        setError(e.message)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadUsers()
+
+  }, [])
   return { users, loading, error }
 }

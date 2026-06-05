@@ -1,4 +1,3 @@
 export default function ErrorMessage({ message }) {
-  // TODO: display message in red
-  return null
+  return <div className="error">{message}</div>
 }

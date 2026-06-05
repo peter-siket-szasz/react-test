@@ -11,7 +11,10 @@ function App() {
   const { users, loading, error } = useUsers()
   const [search, setSearch] = useState('')
 
-  // TODO: filter users by name or email (case-insensitive)
+  const filteredUsers = users?.filter(u =>
+    u.name.toLowerCase().includes(search.toLowerCase()) ||
+    u.email.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
     <>
@@ -26,7 +29,10 @@ function App() {
           onChange={(event) => setSearch(event.target.value)}
         />
 
-        {/* TODO: loading, error, and UserList states */}
+        {loading && <LoadingSpinner />}
+        {error && <ErrorMessage message={error} />}
+
+        {!loading && !error && <UserList users={filteredUsers}></UserList>}
       </div>
     </>
   )
